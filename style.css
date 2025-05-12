@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(/assests/images/bg2.jpg);
+    height: 100vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+}
+
+.main .box {
+    height: 100%;
+    opacity: 0.8;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 75vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    padding-top: 2vh;
+    height: 11vh;
+    position: relative;
+}
+
+#logo {
+    color: red;
+    width: max(12vw, 11vh);
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: 75%;
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    gap: 15px;
+    min-width: 50%;
+    overflow: visible;
+}
+
+.hero> :first-child {
+    font-weight: 900;
+    font-size: max(56px, 2vw);
+    text-align: center;
+}
+
+.hero>:nth-child(2) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#English {
+    width: 8vw;
+    height: fit-content;
+    background-color: rgb(10, 10, 10);
+    opacity: 0.9;
+    border: none;
+    margin: none;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+#Sign_In {
+    height: fit-content;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 5px 13px 5px 13px;
+}
+
+.Email {
+    height: 8vh;
+    width: 25vw;
+    background: transparent;
+    opacity: 0.9;
+    position: relative;
+    color: white;
+    border: 1px solid white;
+    z-index: 10;
+    border-radius: 5px;
+}
+
+.Started {
+    height: 8vh;
+    background-color: red;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 24px;
+    font-size: 500;
+    padding: 1vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.placeholders {
+    display: flex;
+    gap: 1vw;
+}
+
+.seprator {
+    padding: 10vh;
+}
+
+.line {
+    height: 2vh;
+    background-color: #b10e0e;
+    border-radius: 50%;
+}
+
+/* 
+.Trending {
+    max-width: 90vw;
+    margin: auto;
+    color: white;
+}
+
+#trending {
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.photo {
+    width: 30vw;
+    height: 30vh;
+}
+
+.number {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    font-size: 10vw;
+    font-weight: 700;
+    color: black;
+}
+
+.photos:first-child {
+    background-image: url(https://occ-0-4875-2164.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABWtQdcUd4n6VKz6HTm_IbI2cOq0VDU7fDQpomIXBLuCYqtJ4j8hj2pz7j6spnX2osjRgTMJQ9xkMieYZWqC6xC8G4tGlTLJBm3I.webp?r=cc2);
+} */
+
+/* Not Working */
+
+.trending {
+    max-width: 80%;
+    margin: auto;
+}
+
+#trending_text {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: "Martel Sans", sans-serif;
+    padding: 1vw;
+}
+
+.photo {
+    font-size: max(6.25rem,  4vw);
+    display: inline-block;
+    font-family: "Martel Sans", sans-serif;
+    color: #ffffff;
+    height: 40vh;
+    border-radius: 10px;
+    width: 15vw;
+    background-position: center center;
+}
+
+.photos {
+    max-width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+}
+
+.more_things {
+    max-width: 80vw;
+    margin: auto;
+    padding: 5vw;
+    color: white;
+}
+
+#more_text {
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.reasons_heading  {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.another_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.7);
+}
+
+.reasons {
+    height: 50vh;
+    padding: 24px;
+    background-color: rgb(51, 5, 51);
+    width: 15vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: top left;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2vw;
+}
+
+.icons {
+    position: relative;
+    bottom: 0px;
+    right: 0px;
+}
+
+#question_heading {
+    color: white;
+    font-family: "Martel Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 1vw;
+}
+
+.questions {
+    max-width: 80vw;
+    margin: auto;
+    padding-bottom: 5vw;
+}
+
+.main_question {
+    color: white;
+    font-size: 24px;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.question {
+    max-width: 80vw;
+    margin: auto;
+    height: fit-content;
+    padding: 1vw;
+    background-color: #2D2D2D;
+}
+
+.question_seprator {
+    height: 2vh;
+}
+
+.question:hover {
+    background-color: #414141;
+}
+
+.second_last {
+    max-width: fit-content;
+    margin: auto;
+    color: white;
+    padding: 1vw;
+    font-family: "Martel Sans", sans-serif;
+}
+
+.last_container {
+    display: flex;
+    gap: 1vw;
+    max-width: fit-content;
+    margin: auto;
+    align-items: center;
+}
+
+.last_email {
+    width: 45vw;
+    height: 9vh;
+    font-family: "Martel Sans", sans-serif;
+    background: #0F0F0F;
+    border: none;
+    border: 2px solid #5E5E5E;
+    border-radius: 5px;
+    color: white;
+}
