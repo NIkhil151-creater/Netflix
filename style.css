@@ -350,15 +350,31 @@ nav button {
         align-items: flex-start;
         text-align: top left;
     }
+
     .container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 2vw;
     }
+
+    .photo {
+        font-size: max(6.25rem, 4vw);
+        display: inline-block;
+        font-family: "Martel Sans", sans-serif;
+        color: #ffffff;
+        height: 20vh;
+        border-radius: 10px;
+        width: 30vw;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-clip: content-box;
+        background-size: contain;
+        object-position: center center;
+    }
 }
 
-@media only screen and (orientation:landscape){
+@media only screen and (orientation:landscape) {
     .reasons {
         height: fit-content;
         background-color: rgb(51, 5, 51);
@@ -369,6 +385,7 @@ nav button {
         align-items: flex-start;
         text-align: top left;
     }
+
     .container {
         display: flex;
         flex-direction: row;
