@@ -203,14 +203,18 @@ nav button {
 }
 
 .photo {
-    font-size: max(6.25rem,  4vw);
+    font-size: max(6.25rem, 4vw);
     display: inline-block;
     font-family: "Martel Sans", sans-serif;
     color: #ffffff;
     height: 40vh;
     border-radius: 10px;
     width: 15vw;
-    background-position: center center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-size: contain;
+    object-position: center center;
 }
 
 .photos {
@@ -234,7 +238,7 @@ nav button {
     font-weight: 500;
 }
 
-.reasons_heading  {
+.reasons_heading {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 24px;
     font-weight: 500;
@@ -262,7 +266,7 @@ nav button {
 .container {
     display: flex;
     flex-wrap: nowrap;
-    gap: 2vw;
+    gap: 1vw;
 }
 
 .icons {
@@ -311,7 +315,6 @@ nav button {
     max-width: fit-content;
     margin: auto;
     color: white;
-    padding: 1vw;
     font-family: "Martel Sans", sans-serif;
 }
 
@@ -321,6 +324,7 @@ nav button {
     max-width: fit-content;
     margin: auto;
     align-items: center;
+    padding: 2vw;
 }
 
 .last_email {
@@ -332,4 +336,43 @@ nav button {
     border: 2px solid #5E5E5E;
     border-radius: 5px;
     color: white;
+}
+
+@media only screen and (orientation:portrait) {
+    .reasons {
+        height: 25vh;
+        background-color: rgb(51, 5, 51);
+        width: 80vw;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: top left;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+}
+
+@media only screen and (orientation:landscape){
+    .reasons {
+        height: fit-content;
+        background-color: rgb(51, 5, 51);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: top left;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 2vw;
+    }
 }
